@@ -1,0 +1,78 @@
+/* Import das fontes do google */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
+/* Variáveis */
+:root {
+    --primary-color: #cf0f0f;
+    --primary-color-contrast: #ffffff;
+    --field-background-color: #000;
+    --left-arrow-src: url("../images/arrows/left-arrow.svg");
+    --right-arrow-src: url("../images/arrows/right-arrow.svg");
+}
+
+
+/* Temas do Site */
+.light-theme {
+    --page-background: linear-gradient(180deg, #ffffff 0%, #ffffff 65%, rgba(255, 255, 255, 0.75) 100%);
+    --header-background-color: #e3e3e3;
+    --header-min-height: 850px;
+    --highlight-color: #000000;
+    --featured-font-family: "Archivo", sans-serif;
+    --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
+    --character-top-image-color: #ffffff;
+    --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
+    --character-bottom-image-color: #b5bbbf;
+    --background-lamp-image: url("../images/backgrounds/lamps.png");
+    --footer-background-color: #b5bbbf;
+}
+
+.dark-theme {
+    --page-background: linear-gradient(180deg, #050000 0%, #130404 65%, rgba(19, 1, 1, 0.75) 100%);
+    --header-background-color: #220f0f;
+    --header-min-height:1050px;
+    --highlight-color: #ffffff;
+    --featured-font-family: "Rubik Glitch", sans-serif;
+    --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
+    --character-bottom-image-color: #220f0f;
+    --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
+    --character-top-image-color: #000000;
+    --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+    --footer-background-color: #cf0f0f;
+}
+
+
+.dark-theme button,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.dark-theme .invert-element {
+    transform: rotateZ(180deg) scaleX(-1);
+}
+
+
+/* Estilos Genéricos */
+
+* {
+    box-sizing: border-box;
+    transition: 1s; /* tempo de transição entre os temas da página */
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--featured-font-family);
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase; /* deixa todo o texto em caixa alta */
+    margin-bottom: 40px;
+}
