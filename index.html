@@ -2,15 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M U N D O I N V E R T I D O</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
-<body>
-    <header>
-        <audio id="music" autoplay>
-            <source src="assets/musics/musics_assets_musics_normal-world.mpeg">
+<body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
+    <header aria-label="Cabeçalho da página">
+        <audio id="music" autoplay controls>
+            <source src="assets/musics/musics_assets_musics_normal-world.mpeg" type="audio/mpeg">
         </audio>
-
+        
         <div class="header-content">
             <img class="invert-element" src="assets/images/banner/logo.svg" alt="imagem principal Muno Invertido">
             <p class="invert-element" role="text"> 
@@ -81,9 +83,37 @@
                 </ul>
             </div>
         </section>
-        
-        <section></section>
 
+        <section id="section-form" class="container">
+            <h2>O Clube Dungeons And Dragons</h2>
+            <p>
+            Para deter Vecna, os heróis de Stranger Things também precisam de
+            você. O clube de D&D mais famoso de Hawkings está com vagas abertas
+            para sua próxima aventura. Se você é destemido, gosta de desafios e 
+            não tem medo de rolar o D20, chegou a sua hora de se inscrever para fazer
+            parte da nova campanha.
+            </p>
+            <div class="form-content">
+                <h3>Entre para o clube de D&D e tenha experiências de <span>Outro Mundo<span></span></h3>
+                    <div class="form-container">
+                        <form>
+                            <label for="name">Nome Completo</label>
+                            <input type="text" name="name" id="txtName">
+
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="txtEmail">
+
+                            <label for="level">Level</label>
+                            <input type="text" name="level" id="txtLevel">
+
+                            <label for="character">Personagem</label>
+                            <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+
+                            <button type="button" id="btnSubscribe">Me Inscrever</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
     </main>
 
     <footer>
