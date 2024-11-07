@@ -76,3 +76,15 @@ h3 {
     text-transform: uppercase; /* deixa todo o texto em caixa alta */
     margin-bottom: 40px;
 }
+
+
+p {
+    color: var(--highlight-color);
+}
+
+p,
+input,
+textarea,
+label {
+    font-family: "Libre Baskerville", sans-serif;
+}
